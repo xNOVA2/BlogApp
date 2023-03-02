@@ -1,0 +1,38 @@
+nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(1, 149, 247, 0.403);
+    width: 100%;
+    height: 47px;
+  }
+  
+  .logo{
+    padding-left: 20px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    margin: 0px 1rem;
+    }
+  
+  @media (max-width: 768px) {
+
+    
+    nav  {
+      flex-basis: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    ul {
+      justify-content: space-between;
+    }
+  }
+  h4{
+    font-family: cursive;
+  }

@@ -1,0 +1,11 @@
+.username{
+    font-size: 40px;
+    font-family:cursive;
+    padding-left: 100px;
+}
+.dustbin{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}

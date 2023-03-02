@@ -1,0 +1,113 @@
+.blogposts {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.title{
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+.pic {
+  width: 40%; /* Change this value to make the image smaller */
+  margin-left: 200px;
+  border-radius: 20px;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.pic:hover {
+  transform: scale(1.15);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.description::before {
+  background-color: #ffffff;
+  border-radius: 50%;
+  content: "";
+  height: 15px;
+  left: 20px;
+  position: absolute;
+  top: -8px;
+  width: 15px;
+  z-index: 1;
+}
+
+.description::after {
+  background-color: #f5f5f5;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Responsive styles */
+.blogposts {
+  width: 90%; /* Use percentage value for container width */
+}
+
+.author {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.pic {
+  width: 30%; /* Use percentage value for image width */
+  margin-left: 20px;
+  transform: scale(1);
+}
+.userinfo{
+  padding: 2rem;
+  font-family: cursive;
+}
+@media (min-width: 768px) { /* Adjust styles for screens larger than 768px */
+  .blogposts {
+    width: 80%; /* Use smaller percentage value for container width */
+  }
+
+  .author {
+    font-size: 1.5rem; /* Increase font size */
+    margin-bottom: 1rem; /* Increase margin */
+  }
+
+  .date {
+    font-size: 1rem; /* Increase font size */
+    margin-bottom: 1.5rem; /* Increase margin */
+  }
+
+  .pic {
+    width: 40%; /* Increase image width */
+    margin-left: 200px;
+    transform: scale(1.2);
+  }
+
+  .description {
+    font-size: 1.2rem; /* Increase font size */
+  }
+}
